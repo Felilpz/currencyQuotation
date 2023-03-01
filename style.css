@@ -44,7 +44,41 @@ body {
     font-weight: bolder;
 }
 
-.marcador {
+span {
     color: var(--cor5);
     font-weight: 700;
+}
+
+.baixaD, .baixaL, .baixaE {
+    border-bottom: 3px solid var(--cor3);
+}
+
+input[type="number"] {
+    width: 70%;
+    border-radius: 10px 0px;
+    padding: 5px;
+
+    margin-bottom: 7px;
+}
+
+input[type="number"]:focus {
+    outline: none;
+}
+
+button {
+    width: 70%;
+    border-radius: 0px 10px !important;
+    border: none;
+
+    font-size: 1em;
+    font-weight: 500;
+    padding: 5px;
+}
+
+button:hover {
+    background-color: var(--cor2);
+    color: var(--cor4);
+    transition: .5s;
+
+    border: 1px solid var(--cor4);
 }
