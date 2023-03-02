@@ -24,7 +24,7 @@ fetch('https://economia.awesomeapi.com.br/json/last/usd-brl')
             }
 
             let conversaoDolar2 = takeIt * corpo.USDBRL.bid;
-            let conversaoDolar = conversaoDolar2.toLocaleString('pt-br', { style: 'currency', currency: 'USD' });
+            let conversaoDolar = conversaoDolar2.toLocaleString('pt-br', { style: 'currency', currency: 'BRL' });
 
             if (resultadoDolar === null) {
                 resultadoDolar = document.createElement('p');
@@ -65,7 +65,7 @@ fetch('https://economia.awesomeapi.com.br/json/last/eur-brl').then(
         }
 
         let converterEuro = takeIt3 * corpo.EURBRL.bid
-        let converterEuro2 = converterEuro.toLocaleString('pt-br', { style: 'currency', currency: 'EUR' })
+        let converterEuro2 = converterEuro.toLocaleString('pt-br', { style: 'currency', currency: 'BRL' })
         //    console.log(converterEuro2)
 
         if(resultadoEuro === null) {
@@ -105,7 +105,7 @@ fetch('https://economia.awesomeapi.com.br/json/last/gbp-brl').then(
         }
 
         let converterLibra = takeLibra * corpo.GBPBRL.bid
-        let converterLibra2 = converterLibra.toLocaleString('pt-br', {style: 'currency', currency: 'GBP'})
+        let converterLibra2 = converterLibra.toLocaleString('pt-br', {style: 'currency', currency: 'BRL'})
         // console.log(converterLibra2)
 
         if(resultadoLibra === null) {
