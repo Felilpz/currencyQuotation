@@ -1,50 +1,51 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Cotação de MOEDAS</title>
     <!-- Internos -->
-    <script src="script.js" defer></script>
-    <link rel="stylesheet" href="style.css">
+    <script src="script/script.js" defer></script>
+    <link rel="stylesheet" href="style/style.css">
     <!-- Externos -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css">
+    <link rel="shortcut icon" href="style/currency-dollar.svg" type="image/x-icon">
 </head>
+
 <body>
     <div class="container">
-        <div class="bloco">
+        <div class="bloco dolarDiv">
             <h2>DÓLAR</h2>
             <p class="dolar"></p>
-            <p>Alta: <span  class="altaD"></span></p>
+            <p>Alta: <span class="altaD"></span></p>
             <p>Baixa: <span class="baixaD"></span> </p>
 
-            <form>
-                <input type="number" id="converterD" required>
-                <button type="button" id="buttonConverterD">CONVERTER</button> 
-            </form>         
+            <input type="number" id="converterD" placeholder="R$ 00,00">
+            <button type="submit" id="buttonConverterD">CONVERTER</button>
         </div>
-        <div class="bloco">
+        <div class="bloco euroDiv">
             <h2>EURO</h2>
             <p class="euro"></p>
-            <p>Alta: <span  class="altaE"></span> </p>
+            <p>Alta: <span class="altaE"></span> </p>
             <p>Baixa: <span class="baixaE"></span></p>
 
-            <input type="number" id="converterL">
+            <input type="number" id="converterE" placeholder="R$ 00,00">
             <button type="submit" id="buttonConverterE">CONVERTER</button>
         </div>
-        <div class="bloco">
+        <div class="bloco libraDiv">
             <h2>LIBRA</h2>
             <p class="libra"></p>
-            <p>Alta: <span  class="altaL"></span></p>
+            <p>Alta: <span class="altaL"></span></p>
             <p>Baixa: <span class="baixaL"></span></p>
-            
-            <div class="blocoConversao">
-                <input type="number" id="converterL">
-                <button type="submit" id="buttonConverterL">CONVERTER</button>
-            </div>
+
+            <input type="number" id="converterL" placeholder="R$ 00,00">
+            <button type="submit" id="buttonConverterL">CONVERTER</button>
         </div>
     </div>
 </body>
+
 </html>
